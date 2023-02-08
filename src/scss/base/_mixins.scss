@@ -1,0 +1,42 @@
+@use 'variables' as v;
+
+@mixin phone {
+    @media only screen and (max-width: v.$phone){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: v.$tablet-min) and (max-width: v.$tablet-max){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: v.$desktop-min) and (max-width: v.$desktop-max){
+        @content;
+    }
+    
+}
+
+@mixin desktopXl {
+    @media only screen and (min-width: v.$desktopXl){
+        @content;
+    }
+}
+
+@mixin button {
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 60px;
+    color: v.$blanco;
+    transition: .25s;
+    background-color: v.$verde;
+
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    @content;
+}
