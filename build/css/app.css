@@ -389,7 +389,7 @@ header {
   .navbar .content_navbar-small {
     display: block;
   }
-  .navbar .content_navbar-small .abrir_header {
+  .navbar .content_navbar-small .abrir_nav {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -397,7 +397,7 @@ header {
     top: 12px;
     filter: invert(100%);
   }
-  .navbar .content_navbar-small .abrir_header:hover {
+  .navbar .content_navbar-small .abrir_nav:hover {
     cursor: pointer;
   }
   .navbar .content_navbar-small .content_menu-desplegable-header {
@@ -421,14 +421,14 @@ header {
     position: relative;
     top: 10px;
   }
-  .navbar .content_navbar-small .content_menu-desplegable-header .content_menu .cerrar_header {
+  .navbar .content_navbar-small .content_menu-desplegable-header .content_menu .cerrar_nav {
     width: 20px;
     height: 20px;
     filter: invert(100%);
     position: relative;
     top: 10px;
   }
-  .navbar .content_navbar-small .content_menu-desplegable-header .content_menu .cerrar_header:hover {
+  .navbar .content_navbar-small .content_menu-desplegable-header .content_menu .cerrar_nav:hover {
     cursor: pointer;
   }
   .navbar .content_navbar-small .content_menu-desplegable-header .content_enlaces-small ul {
@@ -462,7 +462,7 @@ header {
   .navbar .content_navbar-small {
     display: block;
   }
-  .navbar .content_navbar-small .abrir_header {
+  .navbar .content_navbar-small .abrir_nav {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -470,7 +470,7 @@ header {
     top: 12px;
     filter: invert(100%);
   }
-  .navbar .content_navbar-small .abrir_header:hover {
+  .navbar .content_navbar-small .abrir_nav:hover {
     cursor: pointer;
   }
   .navbar .content_navbar-small .content_menu-desplegable-header {
@@ -494,14 +494,14 @@ header {
     position: relative;
     top: 10px;
   }
-  .navbar .content_navbar-small .content_menu-desplegable-header .content_menu .cerrar_header {
+  .navbar .content_navbar-small .content_menu-desplegable-header .content_menu .cerrar_nav {
     width: 20px;
     height: 20px;
     filter: invert(100%);
     position: relative;
     top: 10px;
   }
-  .navbar .content_navbar-small .content_menu-desplegable-header .content_menu .cerrar_header:hover {
+  .navbar .content_navbar-small .content_menu-desplegable-header .content_menu .cerrar_nav:hover {
     cursor: pointer;
   }
   .navbar .content_navbar-small .content_menu-desplegable-header .content_enlaces-small ul {
