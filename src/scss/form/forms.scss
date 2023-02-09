@@ -1,7 +1,7 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-.body_sign-up{
+.body_sign{
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -47,6 +47,18 @@
                     border-radius: 10px;
                     border: none;
                     border: 1px solid v.$grisClaro;
+                }
+            }
+
+            .content_recuperar-password{
+                margin-top: 1rem;
+                text-align: end;
+                a{
+                    color: v.$grisOscuro;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -116,6 +128,6 @@
 //FORMULARIO VERSIÓN RESPONSIVE
 form{
     @include m.phoneR{
-        width: 90%;
+        margin: 1rem;
     }
 }
