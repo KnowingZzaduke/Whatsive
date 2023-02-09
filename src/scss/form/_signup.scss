@@ -1,0 +1,114 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.body_sign-up{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: v.$grisOscuro;
+
+    form{
+        background-color: v.$blanco;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 1px v.$blanco;
+        .content_bienvenida{
+            .content_logo-whatssive{
+                text-align: center;
+                video{
+                    width: 150px;
+                }
+            }
+            .content_titulo-bienvenida{
+                text-align: center;
+            }
+        }
+        .content_inputs{
+            .input{
+                input{
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 10px;
+                    border: none;
+                    border: 1px solid v.$grisClaro;
+                    margin-top: 1rem;
+                }
+                ::placeholder{
+                    font-size: 15px;
+                    color: v.$negro;
+                    text-align: center;
+                }
+            }
+            .select{
+                margin-top: 1rem;
+            }
+        }
+        .content_aceptar-terminos-condiciones{
+            .terminos_condiciones{
+                font-weight: 500;
+                a{
+                    color: rgb( 52, 152, 219);
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .content_boton-crear-cuenta{
+                margin-top: 1rem;
+                text-align: center;
+                button{
+                    width: 90%;
+                    border: none;
+                    background-color: v.$verde;
+                    border-radius: 10px;
+                    box-shadow: 0 0 3px 1px v.$verde;
+                    padding: 10px 20px;
+                    transition: .25s ease;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .content_tienes-cuenta{
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+                hr{
+                    width: 30%;
+                    opacity: 10;
+                    color: v.$grisClaro;
+                }
+                span{
+                    text-align: center;
+                }
+            }
+            .content_boton-iniciar-sesion{
+                text-align: center;
+                margin-top: 1rem;
+                button{
+                    width: 90%;
+                    border: none;
+                    border-radius: 10px;
+                    box-shadow: 0 0 5px 1px v.$verde;
+                    padding: 10px 20px;
+                    transition: .25s ease;
+                    background-color: v.$verde;
+                    
+                    &:hover{
+                        transform: scale(1.1);
+                        cursor: pointer; 
+                    }
+                }   
+            }
+        }
+    }
+}
+
+//FORMULARIO VERSIÓN RESPONSIVE
+form{
+    @include m.phoneR{
+        width: 90%;
+    }
+}

@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="src/img/Whatssive.png">
     <title>Registrarse</title>
     <link rel="stylesheet" href="../../build/css/app.css">
 </head>
-<body>
-    
+<body class="body_sign-up">
+    <form action="POST">
+        <!-- PRIMER GRUPO -->
+        <fieldset class="content_bienvenida">
+            <div class="content_logo-whatssive">
+                <video src="../../src/video/Whatssive-white.mp4" autoplay muted loop></video>
+            </div>  
+            <div class="content_titulo-bienvenida">
+                <h3>Bienvenido/a</h3>
+                <span>Crea una cuenta</span>
+            </div>
+        </fieldset>
+        <!-- SEGUNDO GRUPO -->
+        <fieldset class="content_inputs">
+            <div class="input">
+                <input type="text" id="nombre" placeholder="Nombres">            
+                <input type="text" id="apellido" placeholder="Apellido">            
+                <div class="select">
+                    <select id="paises">
+                        <input type="search" id="buscador_paises" placeholder="Buscar">
+                    </select>
+                </div>            
+                <input type="email" id="email" placeholder="correo@correo.com">
+                <input type="password" id="contraseña" placeholder="contraseña">
+            </div>
+        </fieldset>
+
+        <!-- TERCER GRUPO -->
+        <fieldset class="content_aceptar-terminos-condiciones">
+            <div class="terminos_condiciones">
+                <input type="checkbox" id="verificar">
+                <span>Estoy de acuerdo con</span>
+                <a href="#">Términos</a>
+                <span>Y</span>
+                <a href="#">Condiciones</a>
+                
+            </div>
+            <div class="content_boton-crear-cuenta">
+                <button type="button">
+                    <span>Crear tu cuenta</span>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </button>
+            </div>
+            <div class="content_tienes-cuenta">
+                <hr>
+                <span>Ya tienes una cuenta?</span>
+                <hr>
+            </div>
+            <div class="content_boton-iniciar-sesion">
+                <button type="button">
+                    <span>Iniciar Sesión</span>
+                </button>
+            </div>
+        </fieldset>
+    </form>
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/1fb0613f73.js" crossorigin="anonymous"></script>
+    <script src="src/js/app.js" type="module"></script>
+    <script src="src/js/functions.js" type="module"></script>
+    <script src="src/js/variables.js" type="module"></script>
 </body>
 </html>

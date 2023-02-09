@@ -30,11 +30,11 @@ a{
     color: v.$blanco;
 }
 
-ul{
+ul, li{
     list-style: none;
 }
 
-ul li{
-    list-style: none;
+fieldset{
+    border: none;
 }
 

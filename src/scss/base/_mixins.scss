@@ -25,6 +25,30 @@
     }
 }
 
+@mixin phoneR{
+    @media only screen and (max-width: v.$phoneR){
+        @content;
+    }
+}
+
+@mixin tabletR{
+    @media only screen and (min-width: v.$tabletR){
+        @content;
+    }
+}
+
+@mixin desktopR{
+    @media only screen and (min-width: v.$desktopR){
+        @content;
+    }
+}
+
+@mixin desktopXlR{
+    @media only screen and (min-width: v.$desktopXlR){
+        @content;
+    }
+}
+
 @mixin button {
     width: 100%;
     border: none;
