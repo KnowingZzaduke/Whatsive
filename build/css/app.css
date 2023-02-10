@@ -942,30 +942,32 @@ header {
 .header_bienvenida .content_all-buttons .content_user .content_opciones-user {
   display: block;
 }
-.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul {
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user .content_configuracion-usuario {
   position: absolute;
   list-style: none;
   margin-top: 15px;
+  left: 70%;
 }
-.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li {
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user .content_configuracion-usuario li {
   padding: 10px 30px;
   background-color: #52BE80;
   list-style: none;
   border-radius: 3px;
   border: 1px solid black;
 }
-.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a {
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user .content_configuracion-usuario li a {
   display: flex;
   align-items: center;
   color: black;
 }
-.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a i {
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user .content_configuracion-usuario li a i {
   margin-right: 1rem;
 }
-.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a p {
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user .content_configuracion-usuario li a p {
   font-size: 15px;
+  display: none;
 }
-.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a p:hover {
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user .content_configuracion-usuario li a p:hover {
   text-decoration: underline;
 }
 .header_bienvenida .content_menu-desplegable {
@@ -1084,13 +1086,22 @@ footer .content_footer p a:hover {
 }
 
 @media only screen and (min-width: 30.063rem) {
+  .header_bienvenida .content_all-buttons .content_user .content_opciones-user .content_configuracion-usuario li {
+    padding: 10px 50px;
+  }
   .header_bienvenida .content_menu-desplegable {
-    width: 230px;
+    width: 240px;
   }
 }
 @media only screen and (min-width: 48rem) {
+  .header_bienvenida .content_all-buttons .content_user .content_opciones-user .content_configuracion-usuario li {
+    padding: 10px 20px;
+  }
+  .header_bienvenida .content_all-buttons .content_user .content_opciones-user .content_configuracion-usuario li a p {
+    display: block;
+  }
   .header_bienvenida .content_menu-desplegable {
-    width: 270px;
+    width: 240px;
   }
 }
 

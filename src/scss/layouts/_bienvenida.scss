@@ -36,11 +36,11 @@
             .content_opciones-user{
                 display: block;
 
-                ul{
+                .content_configuracion-usuario{
                     position: absolute;
                     list-style: none;
                     margin-top: 15px;
-
+                    left: 70%;
 
                     li{
                         padding: 10px 30px;
@@ -59,6 +59,7 @@
 
                             p{
                                 font-size: 15px;
+                                display: none;
 
                                 &:hover{
                                     text-decoration: underline;
@@ -224,13 +225,41 @@ footer{
 
 //VERSIÓN RESPONSIVE DEL PANEL DE BIENVENIDA
 .header_bienvenida{
-    .content_menu-desplegable{
-        @include m.tabletR{
-            width: 230px;
+    @include m.tabletR{
+        .content_all-buttons{
+            .content_user{
+                .content_opciones-user{
+                    .content_configuracion-usuario{
+                        li{
+                            padding: 10px 50px;
+                        }
+                    }
+                }
+            }
         }
-
-        @include m.desktopR{
-            width: 270px;
+        .content_menu-desplegable{
+            width: 240px;
+        }
+    }
+    @include m.desktopR{
+        .content_all-buttons{
+            .content_user{
+                .content_opciones-user{
+                    .content_configuracion-usuario{
+                        li{
+                            padding: 10px 20px;
+                            a{
+                                p{
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content_menu-desplegable{
+            width: 240px;
         }
     }
 }
