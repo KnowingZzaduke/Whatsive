@@ -26,6 +26,12 @@
                 width: 50%;
                 margin: 0% auto;
                 border-radius: 10px;
+                transition: .25s ease;
+                &:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+
                 .icon{
                     background-color: v.$verdeOscuro;
                     height: 100%;
@@ -47,6 +53,7 @@
                         padding: 5px 15px;
                         color: v.$blanco;
                         font-weight: 600;
+                        width: 100%;
                     }
                 }
             }
@@ -69,7 +76,7 @@
                     thead{
                         background-color: v.$grisBlanco;
                         tr{
-                            display: grid;
+                            display: block;
                             :last-child{
                                 border-bottom: 0px;
                                 justify-content: center;
@@ -136,6 +143,93 @@
                         border-radius: 5px;
                         padding: 10px;
                         width: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//TABLA INSTANCIAS CERSIÓN RESPONSIVE
+.body_instancias{
+    .content_all-instancias{
+        @include m.tabletR{
+            width: 90%;
+            .content_header-instancias{
+                .content_boton-agregar-instancias{
+                    height: 40px;
+                }
+            }
+        }
+        @include m.desktopR{
+            .content_header-instancias{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0px;
+                .content_boton-agregar-instancias{
+                    .boton{
+                        button{
+                            text-align: center;
+                            display: flex;
+                            gap: 5px;
+                        }
+                    }
+                }
+            }
+            .content_tabla-instancias{
+                .tabla{
+                    .tabla_instancias{
+                        overflow-x: auto;
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        thead{
+                            flex-basis: 100%;
+                            tr{
+                                display: grid;
+                                width: 100%;
+                                grid-template-columns: repeat(5, 1fr);
+                                text-align: center;
+                                th{
+                                    border-bottom: 0px;
+                                }
+                            }
+                        }
+                        tbody{
+                            tr{
+                                display: grid;
+                                grid-template-columns: repeat(5, 1fr);
+                                text-align: start;
+                                td{
+                                    text-align: left;
+                                    border-bottom: 0px;
+                                }
+                            }
+                        }
+                    }
+                    .content_paginador{
+                        .content_botones-paginador{
+                            button{
+                                transition: .25s ease;
+                                &:hover{
+                                    transform: scale(1.1);
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include m.desktopXlR{
+            .content_header-instancias{
+                .content_boton-agregar-instancias{
+                    .boton{
+                        button{
+                            display: flex;
+                            :last-child{
+                                display: block;
+                            }
+                        }
                     }
                 }
             }
