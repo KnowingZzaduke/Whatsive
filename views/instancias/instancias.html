@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intancias</title>
     <link rel="icon" href="../../src/img/Whatssive.png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../build/css/app.css">
 </head>
-<body>
+<body class="body_instancias">
     <div class="content_all-instancias">
         <div class="content_header-instancias">
-            <div class="inicio-instancias">
+            <div class="inicio_instancias">
                 <div class="icon">
                     <i class="fa-solid fa-circle-arrow-left"></i>
                 </div>
-                <div class="inicio-intancias">
+                <div class="content_parrafo-instancia">
                     <h3>Inicio</h3>
+                    <span>-</span>
                     <h3>Instancias</h3>
                 </div>
             </div>
@@ -25,7 +27,7 @@
                     <i class="fa-solid fa-circle-plus"></i>
                 </div>
                 <div class="boton">
-                    <button type="butto">Agregar instancias</button>
+                    <button type="button">Agregar instancias</button>
                 </div>
             </div>
         </div>
@@ -35,67 +37,79 @@
                     <h2>Instancias</h2>
                 </div>
             </div>
-            <div class="table">
+            <div class="tabla">
                 <table class="tabla_instancias">
                     <thead>
-                        <th>
-                            <a href="#">
-                                <i class="fa-solid fa-caret-right caret_right"></i>
-                                <i class="fa-solid fa-caret-down caret_down" style="display: none;"></i>
-                            </a>
-                            <span>Instancia</span>
-                        </th>
-                        <th>
-                            <a href="#">
-                                <i class="fa-solid fa-caret-right caret_right"></i>
-                                <i class="fa-solid fa-caret-down caret_down" style="display: none;"></i>
-                            </a>
-                            <span>Fecha creación</span>
-                        </th>
-                        <th>
-                            <a href="#">
-                                <i class="fa-solid fa-caret-right caret_right"></i>
-                                <i class="fa-solid fa-caret-down caret_down" style="display: none;"></i>
-                            </a>
-                            <span>Fecha caducidad</span>
-                        </th>
-                        <th>
-                            <a href="#">
-                                <i class="fa-solid fa-caret-right caret_right"></i>
-                                <i class="fa-solid fa-caret-down caret_down" style="display: none;"></i>
-                            </a>
-                            <span>Estatus</span>
-                        </th>
-                        <th></th>
+                        <tr>
+                            <th>
+                                <a href="#">
+                                    <i class="fa-solid fa-caret-right caret_right"></i>
+                                    <i class="fa-solid fa-caret-down caret_down" style="display: none;"></i>
+                                </a>
+                                <span>Instancia</span>
+                            </th>
+                            <th>
+                                <a href="#">
+                                    <i class="fa-solid fa-caret-right caret_right"></i>
+                                    <i class="fa-solid fa-caret-down caret_down" style="display: none;"></i>
+                                </a>
+                                <span>Fecha creación</span>
+                            </th>
+                            <th>
+                                <a href="#">
+                                    <i class="fa-solid fa-caret-right caret_right"></i>
+                                    <i class="fa-solid fa-caret-down caret_down" style="display: none;"></i>
+                                </a>
+                                <span>Fecha caducidad</span>
+                            </th>
+                            <th>
+                                <a href="#">
+                                    <i class="fa-solid fa-caret-right caret_right"></i>
+                                    <i class="fa-solid fa-caret-down caret_down" style="display: none;"></i>
+                                </a>
+                                <span>Estatus</span>
+                            </th>
+                            <th>
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </th>
+                        </tr>
                     </thead>
                     <tbody>
-                        <td>
-                            <div class="icon">
-                                <i class="fa-solid fa-user"></i>
-                            </div>
-                            <div class="id_instancia">
-                                #1234
-                            </div>
-                        </td>
-                        <td>
-                            <span>23/03/2023</span>
-                        </td>
-                        <td>
-                            <span>23/03/2023</span>
-                        </td>
-                        <td>
-                            <span>Iniciada</span>
-                        </td>
-                        <td>
-                            <div class="content_boton-pagar">
-                                <button type="button">
-                                    <i class="fa-regular fa-credit-card"></i>
-                                    <span>Pagar</span>
-                                </button>
-                            </div>
-                        </td>
+                        <tr>    
+                            <td>
+                                <div class="icon">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="id_instancia">
+                                    #1234
+                                </div>
+                            </td>
+                            <td>
+                                <span>23/03/2023</span>
+                            </td>
+                            <td>
+                                <span>23/03/2023</span>
+                            </td>
+                            <td>
+                                <span id="estatus">Iniciada</span>
+                            </td>
+                            <td>
+                                <div class="content_boton-pagar">
+                                    <button type="button">
+                                        <i class="fa-regular fa-credit-card"></i>
+                                        <span>Pagar</span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
+                <div class="content_paginador">
+                    <div class="content_botones-paginador">
+                        <button type="button">Atás</button>
+                        <button type="button">Siguiente</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

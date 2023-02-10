@@ -1,0 +1,144 @@
+@use '../base/variables'as v;
+@use '../base/mixins' as m;
+
+.body_instancias{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    .content_all-instancias{
+        .content_header-instancias{
+            display: grid;
+            gap: 5px;
+            .inicio_instancias{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .content_parrafo-instancia{
+                display: flex;
+                gap: 10px;
+            }
+            .content_boton-agregar-instancias{
+                display: flex;
+                align-items: center;
+                background-color: v.$verde;
+                width: 50%;
+                margin: 0% auto;
+                border-radius: 10px;
+                .icon{
+                    background-color: v.$verdeOscuro;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    width: 40px;
+                    justify-content: center;
+                    border-radius: 10px 0 0 10px;
+                    i{
+                        font-size: 20px;
+                        filter: invert(100);
+                    }
+                }
+                .boton{
+                    button{
+                        background-color: v.$verde;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 5px 15px;
+                        color: v.$blanco;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .content_tabla-instancias{
+            margin-top: 2rem;
+            .content_header-tabla{
+                border: 1px  solid v.$grisClaro;
+                .content_titulo-header-tabla{
+                    text-align: center;
+                    font-weight: 600;
+                }
+            }
+            .tabla{
+                .tabla_instancias{
+                    border: 1px solid v.$grisClaro;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    text-align: center;
+                    thead{
+                        background-color: v.$grisBlanco;
+                        tr{
+                            display: grid;
+                            :last-child{
+                                border-bottom: 0px;
+                                justify-content: center;
+                            }
+                            th{
+                                padding: 10px;
+                                border-bottom: 1px solid v.$grisClaro;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                a{
+                                    display: flex;
+                                    i{
+                                        color: v.$azulMarino;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            display: grid;
+                            td{
+                                padding: 10px;
+                                border-bottom: 1px solid v.$grisClaro;
+                                display: flex;
+                                justify-content: center;
+                                #estatus{
+                                    border-radius: 5px;
+                                    background-color: v.$amarillo;
+                                }
+                                .content_boton-pagar{
+                                    button{
+                                        background-color: v.$verde;
+                                        border: none;
+                                        padding: 4px;
+                                        border-radius: 2px;
+                                        transition: .25s ease;
+                                        &:hover{
+                                            cursor: pointer;
+                                            transform: scale(1.1);
+                                        }
+                                        i{
+                                            filter: invert(100);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .content_paginador{
+                padding-top: 2rem;
+                .content_botones-paginador{
+                    text-align: center;
+                    :first-child{
+                        background-color: v.$grisClaro;
+                    }
+                    button{
+                        background-color: v.$grisOscuro;
+                        border: none;
+                        color: v.$blanco;
+                        border-radius: 5px;
+                        padding: 10px;
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
