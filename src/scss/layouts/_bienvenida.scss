@@ -9,7 +9,7 @@
         grid-template-columns: repeat(2, 1fr);
 
         .content_button-hamburguesa{
-            .abrir{
+            .toggleAbrirMenuHeader{
                 margin: 1rem;
                 cursor: pointer;
             }
@@ -82,7 +82,7 @@
         margin: 0;
         padding: 0;
         background-color: v.$grisOscuro;
-        width: 270px;
+        width: 200px;
         
         .all_content-menu-desplegable{
             .content_button-cerrar{
@@ -104,7 +104,6 @@
             }
 
             .menu_desplegable{
-                display: block;
                 margin-top: 1rem;
                 
                 
@@ -221,4 +220,17 @@ footer{
         }
     }
 
+}
+
+//VERSIÓN RESPONSIVE DEL PANEL DE BIENVENIDA
+.header_bienvenida{
+    .content_menu-desplegable{
+        @include m.tabletR{
+            width: 230px;
+        }
+
+        @include m.desktopR{
+            width: 270px;
+        }
+    }
 }

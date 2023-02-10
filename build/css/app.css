@@ -920,7 +920,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.header_bienvenida .content_all-buttons .content_button-hamburguesa .abrir {
+.header_bienvenida .content_all-buttons .content_button-hamburguesa .toggleAbrirMenuHeader {
   margin: 1rem;
   cursor: pointer;
 }
@@ -978,7 +978,7 @@ header {
   margin: 0;
   padding: 0;
   background-color: #566573;
-  width: 270px;
+  width: 200px;
 }
 .header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .content_button-cerrar {
   display: grid;
@@ -996,7 +996,6 @@ header {
   margin: 10px 0 10px 10px;
 }
 .header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable {
-  display: block;
   margin-top: 1rem;
 }
 .header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable ul :first-child a {
@@ -1082,6 +1081,17 @@ footer .content_footer p a {
 }
 footer .content_footer p a:hover {
   color: #52BE80;
+}
+
+@media only screen and (min-width: 30.063rem) {
+  .header_bienvenida .content_menu-desplegable {
+    width: 230px;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .header_bienvenida .content_menu-desplegable {
+    width: 270px;
+  }
 }
 
 .body_sign {
