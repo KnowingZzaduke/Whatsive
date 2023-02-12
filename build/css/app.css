@@ -1280,60 +1280,60 @@ footer .content_footer p a:hover {
   text-align: center;
   font-weight: 600;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias {
   border: 1px solid #99a3a4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias thead {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias thead {
   background-color: #e5e7e9;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias thead tr {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias thead tr {
   display: block;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias thead tr :last-child {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias thead tr :last-child {
   border-bottom: 0px;
   justify-content: center;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias thead tr th {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias thead tr th {
   padding: 10px;
   border-bottom: 1px solid #99a3a4;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias thead tr th a {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias thead tr th a {
   display: flex;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias thead tr th a i {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias thead tr th a i {
   color: #3498db;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias tbody tr {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias tbody tr {
   display: grid;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias tbody tr td {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias tbody tr td {
   padding: 10px;
   border-bottom: 1px solid #99a3a4;
   display: flex;
   justify-content: center;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias tbody tr td #estatus {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias tbody tr td #estatus {
   border-radius: 5px;
   background-color: #f4d03f;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias tbody tr td .content_boton-pagar button {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias tbody tr td .content_boton-pagar button {
   background-color: #52BE80;
   border: none;
   padding: 4px;
   border-radius: 2px;
   transition: 0.25s ease;
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias tbody tr td .content_boton-pagar button:hover {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias tbody tr td .content_boton-pagar button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-.body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias tbody tr td .content_boton-pagar button i {
+.body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias tbody tr td .content_boton-pagar button i {
   filter: invert(100);
 }
 .body_instancias .content_all-instancias .content_tabla-instancias .content_paginador {
@@ -1373,31 +1373,45 @@ footer .content_footer p a:hover {
     display: flex;
     gap: 5px;
   }
-  .body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias {
+  .body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias {
     overflow-x: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias thead {
+  .body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias thead {
     flex-basis: 100%;
   }
-  .body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias thead tr {
+  .body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias thead tr {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
   }
-  .body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias thead tr th {
+  .body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias thead tr :last-child {
+    justify-content: start;
+  }
+  .body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias thead tr th {
     border-bottom: 0px;
   }
-  .body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias tbody tr {
+  .body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias tbody tr {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     text-align: start;
   }
-  .body_instancias .content_all-instancias .content_tabla-instancias .tabla .tabla_instancias tbody tr td {
-    text-align: left;
+  .body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias tbody tr td {
+    justify-content: start;
     border-bottom: 0px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias tbody tr td .content_boton-eliminar i {
+    color: #c0392b;
+    transition: 0.25s ease;
+  }
+  .body_instancias .content_all-instancias .content_tabla-instancias .tabla #tabla_instancias tbody tr td .content_boton-eliminar i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
   .body_instancias .content_all-instancias .content_tabla-instancias .tabla .content_paginador .content_botones-paginador button {
     transition: 0.25s ease;

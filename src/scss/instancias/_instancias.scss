@@ -68,7 +68,7 @@
                 }
             }
             .tabla{
-                .tabla_instancias{
+                #tabla_instancias{
                     border: 1px solid v.$grisClaro;
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
@@ -178,13 +178,16 @@
             }
             .content_tabla-instancias{
                 .tabla{
-                    .tabla_instancias{
+                    #tabla_instancias{
                         overflow-x: auto;
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
                         thead{
                             flex-basis: 100%;
                             tr{
+                                :last-child{
+                                    justify-content: start;
+                                }
                                 display: grid;
                                 width: 100%;
                                 grid-template-columns: repeat(5, 1fr);
@@ -200,8 +203,21 @@
                                 grid-template-columns: repeat(5, 1fr);
                                 text-align: start;
                                 td{
-                                    text-align: left;
+                                    justify-content: start;
                                     border-bottom: 0px;
+                                    display: flex;
+                                    align-items: center;
+                                    column-gap: 10px;
+                                    .content_boton-eliminar{
+                                        i{
+                                            color: v.$rojoDanger;
+                                            transition: .25s ease;
+                                            &:hover{
+                                                cursor: pointer;
+                                                transform: scale(1.1);
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

@@ -16,3 +16,8 @@ export const contentDesplegar = document.querySelector('.content_menu-desplegabl
 export const toggleCaretRight = document.querySelector('.caret_right');
 export const toggleCaretDown = document.querySelector('.caret_down');
 export const contentConfiguracionUsuario = document.querySelector('.content_configuracion-usuario');
+
+//BOTON Y TABLA PARA AGREGAR INSTANCIAS
+export const tablaInstancias = document.getElementById('tabla_instnacias');
+export const btnAgregarIntancia = document.getElementById('btn_agregar-instancias');
+export const tbody = document.getElementById('tbody');

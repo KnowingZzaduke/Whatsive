@@ -27,7 +27,7 @@
                     <i class="fa-solid fa-circle-plus"></i>
                 </div>
                 <div class="boton">
-                    <button type="button"><span>Agregar</span> <span>instancias</span></button>
+                    <button type="button" id="btn_agregar-instancias"><span>Agregar</span> <span>instancias</span></button>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="tabla">
-                <table class="tabla_instancias">
+                <table id="tabla_instancias">
                     <thead>
                         <tr>
                             <th>
@@ -74,34 +74,8 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>    
-                            <td>
-                                <div class="icon">
-                                    <i class="fa-solid fa-user"></i>
-                                </div>
-                                <div class="id_instancia">
-                                    #1234
-                                </div>
-                            </td>
-                            <td>
-                                <span>23/03/2023</span>
-                            </td>
-                            <td>
-                                <span>23/03/2023</span>
-                            </td>
-                            <td>
-                                <span id="estatus">Iniciada</span>
-                            </td>
-                            <td>
-                                <div class="content_boton-pagar">
-                                    <button type="button">
-                                        <i class="fa-regular fa-credit-card"></i>
-                                        <span>Pagar</span>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
+                    <tbody id="tbody">
+                        
                     </tbody>
                 </table>
                 <div class="content_paginador">
@@ -114,6 +88,6 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/1fb0613f73.js" crossorigin="anonymous"></script>
-    <script src="" type="module"></script>
+    <script src="../../src/js/instancias.js" type="module"></script>
 </body>
 </html>

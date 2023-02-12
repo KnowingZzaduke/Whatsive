@@ -1,4 +1,4 @@
-import { selectPaises, apiKey, contentMenuDesplegar, toggleAbrirNav, toggleCerrarNav, toggleAbrirMenuHeader, contentDesplegar, toggleCerrarMenuHeader, toggleCaretDown, contentConfiguracionUsuario, toggleCaretRight } from "./variables.js";
+import { selectPaises, apiKey, contentMenuDesplegar, toggleAbrirNav, toggleCerrarNav, toggleAbrirMenuHeader, contentDesplegar, toggleCerrarMenuHeader, toggleCaretDown, contentConfiguracionUsuario, toggleCaretRight, tbody} from "./variables.js";
 
 // ABRIR NAV
 export function abrirNav(){
@@ -56,7 +56,7 @@ export function mostrarConfiguraciones(){
         contentConfiguracionUsuario.style.display = "block";
     }
 }
-
+    // ESCONDER CONFIGURACIONES DEL USURIO
 export function esconderConfiguraciones(){
     if(toggleCaretDown){
         toggleCaretDown.style.display = "none";
@@ -64,3 +64,49 @@ export function esconderConfiguraciones(){
         contentConfiguracionUsuario.style.display = "none";
     }
 }
+
+
+let id = 1;
+export function agregarInstancias(){
+    const newRow = tbody.insertRow(-1);
+    newRow.setAttribute("id", + id++);
+    newRow.innerHTML = `
+        <td>
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="id_instancia">
+                #1
+            </div>
+        </td>
+        <td>
+            <span>23/03/2023</span>
+        </td>
+        <td>
+            <span>23/03/2023</span>
+        </td>
+        <td>
+            <span id="estatus">Iniciada</span>
+        </td>
+        <td>
+            <div class="content_boton-pagar">
+                <button type="button">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <span>Pagar</span>
+                </button>
+            </div>
+            <div class="content_boton-eliminar">
+                <i class="fa-solid fa-trash" id="eliminar" onclick="eliminarInstancias(${id})"></i>
+            </div>
+        </td>
+    `
+}
+
+function eliminarInstancias(id){
+    console.log(id);
+}
+
+console.log(eliminarInstancias);
+
+
+
