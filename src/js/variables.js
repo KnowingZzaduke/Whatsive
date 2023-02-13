@@ -19,5 +19,6 @@ export const contentConfiguracionUsuario = document.querySelector('.content_conf
 
 //BOTON Y TABLA PARA AGREGAR INSTANCIAS
 export const tablaInstancias = document.getElementById('tabla_instnacias');
-export const btnAgregarIntancia = document.getElementById('btn_agregar-instancias');
 export const tbody = document.getElementById('tbody');
+export const btnAgregarInstancia = document.getElementById('btn_agregar-instancias');
+

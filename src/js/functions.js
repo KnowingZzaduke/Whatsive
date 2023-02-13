@@ -66,9 +66,10 @@ export function esconderConfiguraciones(){
 }
 
 let id = 1;
+
 export function agregarInstancias(){
-    const newRow = tbody.insertRow(-1);
-    newRow.setAttribute("id", + id++);
+    const newRow = tbody.insertRow();
+    newRow.setAttribute("id", id++);
     newRow.innerHTML = `
         <td>
             <div class="icon">
@@ -95,16 +96,25 @@ export function agregarInstancias(){
                 </button>
             </div>
             <div class="content_boton-eliminar">
-            <i class="fa-solid fa-trash eliminar" id="eliminar" onclick="eliminarInstancias(${id})"></i>
+                <i class="fa-solid fa-trash eliminar" id="eliminar"></i>
             </div>
         </td>
     `
-    console.log(id);
+        const btnEliminarInstancia = document.querySelectorAll('.eliminar');
+        btnEliminarInstancia.forEach((e) => {
+            e.addEventListener('click', function(e){
+                e.preventDefault();
+                const clickedBtn = e.target;
+                const parentRow = clickedBtn.closest("tr");
+                tbody.deleteRow(parentRow.rowIndex - 1);
+            });
+        });
 }
 
 export function eliminarInstancias(id){
-    console.log(id);
 }
+
+
 
 
 

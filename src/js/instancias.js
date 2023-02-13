@@ -1,4 +1,4 @@
-import { agregarInstancias} from "./functions.js";
-import { btnAgregarIntancia } from "./variables.js";
+import { agregarInstancias, eliminarInstancias} from "./functions.js";
+import { btnAgregarInstancia } from "./variables.js";
 
-btnAgregarIntancia.onclick = agregarInstancias;
+btnAgregarInstancia.onclick = agregarInstancias;
