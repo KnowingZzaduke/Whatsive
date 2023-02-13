@@ -65,7 +65,6 @@ export function esconderConfiguraciones(){
     }
 }
 
-
 let id = 1;
 export function agregarInstancias(){
     const newRow = tbody.insertRow(-1);
@@ -96,17 +95,19 @@ export function agregarInstancias(){
                 </button>
             </div>
             <div class="content_boton-eliminar">
-                <i class="fa-solid fa-trash" id="eliminar" onclick="eliminarInstancias(${id})"></i>
+            <i class="fa-solid fa-trash eliminar" id="eliminar" onclick="eliminarInstancias(${id})"></i>
             </div>
         </td>
     `
-}
-
-function eliminarInstancias(id){
     console.log(id);
 }
 
-console.log(eliminarInstancias);
+export function eliminarInstancias(id){
+    console.log(id);
+}
+
+
+
 
 
 
